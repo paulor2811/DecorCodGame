@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class ScreenLabel {
-	private JLabel label;
+	public JLabel label;
 	public ScreenLabel(JFrame frame, GridBagConstraints gbc) {
 		label = new JLabel();
 
@@ -23,9 +23,5 @@ public class ScreenLabel {
         gbc.insets = new Insets(-20, 0, 0, 0); // Margem inferior de 40 pixels
         
         frame.add(label, gbc);
-	}
-	public void setText(String text) {
-		//System.out.println("br.paulo.decorcodbarras.gui.ScreenLabel.setText: String text: " + text);
-		label.setText(text);
 	}
 }

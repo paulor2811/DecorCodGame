@@ -7,7 +7,8 @@ import javax.swing.JFrame;
 
 public class ScreenColor {
 	public ScreenColor(JFrame frame) {
-		frame.getContentPane().setBackground(RandomColor()); // define a cor de fundo
+		//frame.getContentPane().setBackground(RandomColor()); // define a cor de fundo aleatóriamente
+		frame.getContentPane().setBackground(Color.BLACK); // define a cor de fundo
 	}
 	private Color  RandomColor() {
 		Random random = new Random();

@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 
 public class ScreenTextField {
-	JTextField textField;
+	public JTextField textField;
 	public ScreenTextField(JFrame frame, GridBagConstraints gbc) {
 		textField = new JTextField();
 
@@ -26,7 +26,7 @@ public class ScreenTextField {
         textField.setOpaque(false);
         textField.setBackground(new Color(0,0,0,0));
 
-        textField.setForeground(Color.black);
+        textField.setForeground(Color.WHITE);
         Font font = new Font("Arial", Font.BOLD, 18);
         textField.setFont(font);
 	    
@@ -35,13 +35,7 @@ public class ScreenTextField {
         
 		frame.add(textField, gbc);
 	}
-	public void setText(String text) {
-		textField.setText(text);
-	}
-	public void setEnabledField(boolean bool) {
-		textField.setEnabled(bool);
-	}
-	public void setBorder(boolean bool) {
+	public void setTextFieldBorder(boolean bool) {
 		if(bool) {
 			Border border = BorderFactory.createLineBorder(Color.BLACK); // Cria uma borda simples com cor preta
 	        textField.setBorder(border);
